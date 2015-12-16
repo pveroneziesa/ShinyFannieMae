@@ -182,7 +182,6 @@ getdata_zip <- function (year_lower, year_upper,bcs_lower,bcs_upper,oir_lower,oi
   result$z <- str_pad(result$z,3,pad="0")
   
   #get the list of zipcodes of USA and the relationship with the State
-  setwd("C:/Users/PedroHenrique/OneDrive/Financial Engineering/Fannie Mae/fannie_mae/www")
   zip_state_county <- read.csv("www/zip_state_county.csv")
   #clean the data leaving just the 3 first digits
   zip_state_county[,2] <- substr(zip_state_county[,2],0,3)
