@@ -1,7 +1,7 @@
 library("shiny")
 library("h2o")
 
-setwd("C:/Users/PedroHenrique/OneDrive/Financial Engineering/Fannie Mae/fannie_mae/www")
+setwd("~/www")
 source("graphs_functions.R")
 
 pred_banks_data <- getdata_banks_list(1,14)
